@@ -13,14 +13,14 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';                       //gmail SMTP server set to send through
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'user@example.com';                     //SMTP username (your gmail account)
+    $mail->Username   = carsoncross65@gmail.com;                     //SMTP username (your gmail account)
     $mail->Password   = 'secret';                               //SMTP password (your gmail password or app password)
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;
 
     //Recipients
-    $mail->setFrom('from@example.com', 'Mailer');         //Set the sender of the message (your email address)
-    $mail->addAddress('joe@example.net', 'Joe User');     //Add a recipient (your bae's email address)
+    $mail->setFrom( carsoncross65@gmail.com, Carson);         //Set the sender of the message (your email address)
+    $mail->addAddress(carsoncross65@gmail.com, Carson);     //Add a recipient (your bae's email address)
 
     //Content
     $mail->isHTML(true);
